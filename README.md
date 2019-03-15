@@ -1,5 +1,7 @@
 # CheckersGame
 
+-Rules-
+
 Checkers is played on a standard 64 square board. 
 Only the 32 dark colored squares are used in play. 
 Each player begins the game with 12 pieces, or checkers, placed in the three rows closest to him or her.
