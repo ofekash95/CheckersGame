@@ -1,6 +1,5 @@
 # CheckersGame
 
--Rules-
 Checkers is played on a standard 64 square board. 
 Only the 32 dark colored squares are used in play. 
 Each player begins the game with 12 pieces, or checkers, placed in the three rows closest to him or her.
@@ -11,6 +10,7 @@ You can not move a checker backwards until it becomes a Queen, as described belo
 If a jump is available, you can take the jump, but you don't have to.
 
 jumping:
+
 If one of your opponent’s checkers is on a forward diagonal next to one of your checkers, 
 and the next space beyond the opponent’s checker is empty, 
 then your checker can jump the opponent’s checker and land in the space beyond. 
@@ -20,6 +20,7 @@ Your checker can take that jump too. It can continue to jump until there are no 
 Both regular pieces and Queens are allowed to make multiple jumps. 
 
 Crowning:
+
 When one of your checkers reaches the opposite side of the board, it is crowned and becomes a Queen.
 A Queen can move backward as well as forward along the diagonals. It can only move a distance of one space. 
 A Queen can also jump backward and forward. It must jump when possible, and it must take all jumps that are available to it. 
