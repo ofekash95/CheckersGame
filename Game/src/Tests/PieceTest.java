@@ -1,9 +1,7 @@
 package Tests;
 
 import java.util.Vector;
-
 import Checkers.Board;
-import Game.Location;
 
 public class PieceTest {
 

@@ -16,8 +16,8 @@ public class RunTest {
 		//board.addPiece(false, new Location(2, 2));
 		//board.addPiece(false, new Location(2, 4));
 		//board.addPiece(false, new Location(4, 2));
-		Run run = new Run();
-		Board boardA = (Board) run.playerTurn(board);
+		//Run run = new Run();
+		//Board boardA = (Board) run.playerTurn(board);
 	}
 	
 	

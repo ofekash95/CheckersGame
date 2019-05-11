@@ -60,36 +60,6 @@ public class Run implements Game.Run{
 		return new Board(darkPieces, whitePieces);
 	}
 
-
-
-	//
-	//delete!!!
-	//
-	//delete!!!
-	//
-	private Board check(){
-		Piece p1 = new Piece(true, new Location(3,5));
-		Piece p4 = new Piece(true, new Location(7,1));
-		Piece p5 = new Piece(true, new Location(7,3));
-	//	Piece p6 = new Piece(true, new Location(2,4));
-	//	Piece p7 = new Piece(true, new Location(2,6));
-	//	Piece p2 = new Piece(false, new Location(8,4));
-		Piece p3 = new Piece(false, new Location(6,8));
-	
-		Vector<Piece> v1 = new Vector<>();
-		Vector<Piece> v2 = new Vector<>();
-		
-		v1.add(p1);
-		v1.add(p4);
-		v1.add(p5);
-	//	v1.add(p6);
-	//	v1.add(p7);
-	//	v2.add(p2);
-		v2.add(p3);
-		
-		return new Board(v2, v1);
-	}
-	
 	
 	@Override
 	public void runTheGame() {
@@ -135,7 +105,6 @@ public class Run implements Game.Run{
 
 	@Override
 	public Game.Board computerTurn(Game.Board board) {
-		boolean nextTurnColor = this._compType;
 		AlgoNode root = new AlgoNode(board); //current board
 		AlgoTree tree = new AlgoTree(root, this._hight);   
 		board.setRecord(this._compType);
@@ -191,7 +160,7 @@ public class Run implements Game.Run{
 						+ "between each location write '-'\n");
 				from = "";
 				to = "";
-				path = this._reader.next(); //get input from the user
+				path = Run._reader.next(); //get input from the user
 				if(path.length() < 5){ //beginning point and there isn't at list 2 locations
 					path = "X"; //to don't get out from the next loop
 					System.out.println("Wrong LocationA");

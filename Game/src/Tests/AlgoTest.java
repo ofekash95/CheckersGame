@@ -1,7 +1,5 @@
 package Tests;
 
-import Algorithm.AlgoNode;
-import Algorithm.AlgoTree;
 
 public class AlgoTest {
 	

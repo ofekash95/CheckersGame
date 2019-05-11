@@ -1,10 +1,7 @@
 package Algorithm;
 
 import java.util.Scanner;
-
 import Checkers.Run;
-import Tests.AlgoTest;
-import Tests.RunTest;
 
 
 public class Main {
@@ -15,7 +12,6 @@ public class Main {
 	public static void main(String[] args){
 		Main m = new Main();
 		m.chooseAGame();
-		//RunTest.treeBuildingTest();
 	}
 	
 	

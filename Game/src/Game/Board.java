@@ -2,8 +2,6 @@ package Game;
 
 import java.util.Vector;
 
-import Checkers.Piece;
-
 public interface Board {
 
 	/**

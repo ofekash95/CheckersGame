@@ -100,17 +100,14 @@ public class Piece implements Game.Piece{
 	 */
 	private void capturedPiecesOptions(Board currBoard, boolean isSecondCaptured, Vector<Board> allOptions){
 		Board newBoard;
-		boolean isEntered = false; //means this is the last captured in a row 
 		if((this._isWhite || this._isQueen || isSecondCaptured) &&
 				this._location.getRow() < 7){	
 			if(canCaptured(true, true, currBoard)){ //check if can captured to up right direction
-				isEntered = true;
 				newBoard = nextBoard(currBoard, 2, 2, new Location(this._location.getRow() + 1, this._location.getColumn() + 1)); //create a new board with the specified move and captured
 				newBoard.getPiece(new Location(this._location.getRow() + 2, this._location.getColumn() + 2)).capturedPiecesOptions(newBoard, true, allOptions);
 				allOptions.addElement(newBoard);
 			}			
 			if(canCaptured(false, true, currBoard)){ //check if can captured to up left direction		
-				isEntered = true;
 				newBoard = nextBoard(currBoard, 2, -2, new Location(this._location.getRow() + 1, this._location.getColumn() - 1)); 
 				newBoard.getPiece(new Location(this._location.getRow() + 2, this._location.getColumn() - 2)).capturedPiecesOptions(newBoard, true, allOptions);
 				allOptions.addElement(newBoard);
@@ -119,13 +116,11 @@ public class Piece implements Game.Piece{
 		if((!this._isWhite || this._isQueen || isSecondCaptured) &&
 				this._location.getRow() > 2){	
 			if(canCaptured(true, false, currBoard)){ //check if can captured to down right direction		
-				isEntered = true;
 				newBoard = nextBoard(currBoard, -2, 2, new Location(this._location.getRow() - 1, this._location.getColumn() + 1));
 				newBoard.getPiece(new Location(this._location.getRow() - 2, this._location.getColumn() + 2)).capturedPiecesOptions(newBoard, true, allOptions);
 				allOptions.addElement(newBoard);
 			}
 			if(canCaptured(false, false, currBoard)){ //check if can captured to down left direction
-				isEntered = true;
 				newBoard = nextBoard(currBoard, -2, -2, new Location(this._location.getRow() - 1, this._location.getColumn() - 1));
 				newBoard.getPiece(new Location(this._location.getRow() - 2, this._location.getColumn() - 2)).capturedPiecesOptions(newBoard, true, allOptions);
 				allOptions.addElement(newBoard);

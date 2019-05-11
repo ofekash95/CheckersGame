@@ -1,10 +1,6 @@
 package Checkers;
 
-import java.security.AllPermission;
 import java.util.Vector;
-
-import javax.print.attribute.standard.OutputDeviceAssigned;
-
 import Game.Location;
 
 public class Board implements Game.Board{

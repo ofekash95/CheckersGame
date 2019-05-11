@@ -9,7 +9,6 @@ public class AlgoNode {
 	private Game.Board _board;
 	private boolean _compTurn;
 	private int _record;
-	private String name;
 	
 //	public AlgoNode(int record, String name, boolean b){ //for tests
 //		this._record = record;

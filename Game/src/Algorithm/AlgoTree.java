@@ -46,7 +46,7 @@ public class AlgoTree { //the leaf are compTurn (Maximal nodes)
 				if(tmpValue > value)
 					value = tmpValue;
 				if(value >= max){
-					node.setRecord(max);
+					node.setRecord(value);
 					return;
 				}
 			}
@@ -59,7 +59,7 @@ public class AlgoTree { //the leaf are compTurn (Maximal nodes)
 				if(tmpValue < value)
 					value = tmpValue;
 				if(value <= min){
-					node.setRecord(min);
+					node.setRecord(value);
 					return;
 				}
 			}
